@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Diego782/dockertest.git'
+                git branch: 'main', url: 'https://github.com/Diego782/dockertest.git'
             }
         }
         stage('Build') {
@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Run') {
             steps {
-               sh '''
+                sh '''
                 docker stop mi-aplicacion || true
                 docker rm mi-aplicacion || true
                 docker run -d -p 3000:3000 --name mi-aplicacion mi-aplicacion
