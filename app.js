@@ -4,7 +4,7 @@ const port = 3000;
 
 // Ruta de ejemplo
 app.get('/', (req, res) => {
-  res.send('¡Hola, desde la maquina remota!');
+  res.send('¡Hola, desde la maquina remota (intento 2)!');
 });
 
 // Inicia el servidor
