@@ -4,7 +4,7 @@ const port = 3000;
 
 // Ruta de ejemplo
 app.get('/', (req, res) => {
-  res.send('¡Hola, tercera vez pero sin jenkin file!');
+  res.send('¡Hola, desde la maquina remota!');
 });
 
 // Inicia el servidor
